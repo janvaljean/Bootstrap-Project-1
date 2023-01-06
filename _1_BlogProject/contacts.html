@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>Navbar</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="h-100 d-flex flex-column">
+    <header>
+        <!-- ------nav------ -->
+
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="rounded-3" src="https://picsum.photos/500/300" alt=""
+                        width="75px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="blogs.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacts.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+   <main>
+    <div class="container my-4">
+        <h2 class="my-3">Contact me</h2>
+        <div class="row g-2 mx-auto">
+            <div class="col-12 col-md-7 col-lg-8 col-xl-9 order-2">
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67118.17506577086!2d8.697564972775927!3d49.947930246856366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd70666eee3ffd%3A0x42fd16bf6a04362c!2sMagdalenenstra%C3%9Fe%204%2C%2064289%20Darmstadt!5e0!3m2!1sde!2sde!4v1673016369090!5m2!1sde!2sde"
+                    width="100%"  style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-12 col-md-5 col-lg-4 col-xl-3 order-1">
+                <div class="card bg-dark">
+                    <div class="card-body ">
+                        <div class="alert alert-warning">
+                            Enter your Information
+                        </div>
+                        <form class="row g-3 text-white">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">name</label>
+                                <input type="text" name="name" id="name" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lname" class="form-label">lastName</label>
+                                <input type="text" name="lname" id="lname" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="email" class="form-label">email</label>
+                                <input type="email" name="email" id="email" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="phone" class="form-label">phone</label>
+                                <input type="phone" name="phone" id="phone" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="subject" class="form-label">subject</label>
+                                <input type="text" name="email" id="email" placeholder="computers" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="message" class="form-label">message</label>
+                                <textarea name="message" id="message" class="form-control"> </textarea>
+                            </div>
+                            <div class="col-12">
+                            <button class="btn btn-outline-warning" style="width: 100%;">Send your message</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </main>
+
+    <!-- place footer here -->
+    <footer class="py-5 bg-dark text-white mt-auto">
+        <div class="container text-center">
+            <span>All Rights Reserved.<span>Sefa</span><i class="fa-regular fa-copyright text-warning"></i>2023</span>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
